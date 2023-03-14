@@ -1,0 +1,361 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ /*font-family: "Lato", sans-serif;*/
+ background-color: #f2f2f2;
+ margin: 0;
+ padding: 0;
+ background-image: url('https://nypost.com/wp-content/uploads/sites/2/2019/05/swns-foodies-0149.jpg?quality=75&strip=all');
+ position: relative;
+ opacity: 89%;
+}
+
+.logo {
+ text-align:left;
+ padding: 0px;
+}
+
+.log-reg {
+ text-align: right;
+}
+.b1,.b2,.b3 {
+ font-size: 20px;
+ color: white;
+ cursor: pointer;
+ background-color: lightgreen;
+ border-radius: 5px;
+}
+.subsc {
+ text-align: right;
+}
+.b1:hover {
+ color: white;
+ background-color: darkgreen;
+}
+.b2:hover {
+ color: white;
+ background-color: darkgreen;
+}
+.b3:hover {
+ background-color: darkgray;
+ color: lightgreen;
+}
+
+.first-text {
+ color: white;
+ text-align: center;
+ height: 0px;
+ padding: 220px;
+}
+
+.slideside {
+ text-align: right;
+}
+
+.sidenav {
+  height: 99%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.back {
+ opacity: 100%;
+}
+
+header {
+ background-color: #333;
+ /*color: #fff;*/
+ padding: 10px;
+}
+
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+nav ul {
+ list-style: none;
+ display: flex;
+ margin: 0;
+ padding: 0;
+ margin-right: 20px;
+ color: #fff;
+ text-decoration: none;
+ /*display: inline-block;*/
+ /*float: none;*/
+ /*width: 100%;*/
+ /*text-align: center;*/
+}
+
+
+#navi {
+ width: 750px;
+ margin: 0 auto;
+ list-style: none;
+}
+#navi li {
+ margin-right: 20px;
+ float: left;
+ color: #fff;
+ text-decoration: none;
+}
+#navi a {
+ display: block;
+ text-align: center;
+ width: 150px;
+ color: #fff;
+ text-decoration: none;
+}
+
+.button {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ text-decoration: none;
+ display: inline-block;
+ margin-top: 20px;
+}
+
+.button:hover {
+ background-color: #fff;
+ color: #333;
+}
+
+
+.foot {
+ margin: auto;
+ padding: 0px;
+ color: green;
+}
+.tab {
+ display: inline-block;
+ margin-left: 153px;
+}
+.space {
+ display: inline-block;
+ margin-left: 200px;
+}
+.mailform {
+ text-align: right; 
+}
+.checkwhite {
+ color: white;
+ line-height: 1.5em;
+ height: 2em;
+}
+
+
+main {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+section {
+ margin-bottom: 40px;
+}
+
+h2 {
+ font-size: 24px;
+ margin-bottom: 20px;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+li {
+ margin-bottom: 10px;
+}
+
+h3 {
+ font-size: 20px;
+ margin-bottom: 10px;
+}
+
+form label {
+ display: block;
+ margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+ display: block;
+ margin-bottom: 20px;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ width: 100%;
+}
+
+form input[type="submit"] {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+
+.hero {
+ background-image: url('hero.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 500px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.hero h2 {
+ font-size: 50px;
+ margin-bottom: 20px;
+}
+
+.hero p {
+ font-size: 24px;
+ margin-bottom: 40px;
+}
+
+.featured {
+ background-color: #f2f2f2;
+ padding: 50px 0;
+}
+
+.featured h3 {
+ font-size: 36px;
+ margin-bottom: 40px;
+}
+
+.box {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ margin-bottom: 20px;
+}
+
+.box img {
+ width: 100%;
+ border-radius: 5px;
+ margin-bottom: 20px;
+}
+
+.box h4 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+.box p {
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+
+.about {
+ padding: 50px 0;
+}
+
+.about h3 {
+ font-size: 36px;
+ margin-bottom: 40px;
+}
+
+.about p {
+ font-size: 16px;
+ margin-bottom: 40px;
+}
+
+.contact {
+ background-color: #f2f2f2;
+ padding: 50px 0;
+}
+
+.contact h3 {
+ font-size: 36px;
+ margin-bottom: 40px;
+}
+
+.contact form {
+ display: flex;
+ flex-direction: column;
+ max-width: 500px;
+ margin: 0 auto;
+}
+
+.contact label {
+ font-size: 16px;
+ margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+ padding: 10px;
+ margin-bottom: 20px;
+ border-radius: 5px;
+ border: none;
+}
+
+.contact button {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ border-radius: 5px;
+ border: none;
+ text-decoration: none;
+}
+
+.contact button:hover {
+ background-color: #fff;
+ color: #333;
+}
+
+footer {
+ background-color: #333;
+ color: #fff;
+ padding: 20px;
+ text-align: center;
+}
+

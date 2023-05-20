@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAR's Calculator</title>
+    <link rel ="stylesheet" href="main.css">
+
+</head>
+<body>
+ <h1 class="name"><b> SIMPLE CALCULATOR</b<br></h1> 
+ <div id="calculator">
+ <div class="texts">
+
+ <div class="display">
+ 
+  <input type="text" id="result" name="display" value=""/>
+  
+  <button onclick="clearResult()">AC</button>
+  <button onclick="deleResult()">DE</button>
+  <button onclick="calculate('%')">%</button>
+  <button onclick="calculate('/')">/</button>
+
+  <br>
+  <button onclick="insertNumber('7')">7</button>
+  <button onclick="insertNumber('8')">8</button>
+  <button onclick="insertNumber('9')">9</button>
+  <button onclick="calculate('*')">*</button>
+
+  <br>
+  <button onclick="insertNumber('4')">4</button>
+  <button onclick="insertNumber('5')">5</button>
+  <button onclick="insertNumber('6')">6</button>
+  <button onclick="calculate('-')">-</button>
+  
+  <br>
+  <button onclick="insertNumber('1')">1</button>
+  <button onclick="insertNumber('2')">2</button>
+  <button onclick="insertNumber('3')">3</button>
+  <button onclick="calculate('+')">+</button>
+  
+  <br>
+  <button onclick="insertNumber('00')">00</button>
+  <button onclick="insertNumber('0')">0</button>
+  <button onclick="insertNumber('.')">.</button>
+  <button onclick="calculate('=')">=</button>
+  
+ </div>
+ </div>
+
+ <script>
+ let calculation = '';
+  let result = document.getElementById('result');
+
+  function insertNumber(number) {
+    calculation += number;
+    result.value = calculation;
+  }
+
+  function calculate(operator) {
+    if (operator === '=') {
+      calculation = eval(calculation);
+      result.value = calculation;
+    } else {
+      calculation += operator;
+      result.value = calculation;
+    }
+  }
+
+  function clearResult() {
+    calculation = '';
+    result.value = '';
+  }
+  
+  function deleResult() {
+    result.value = result.value.slice(0,-1)
+  }
+  </script>
+
+</body>
+</html>
